@@ -207,7 +207,7 @@ with recursive chain_under_comment(id, user_id, track_id, date_time, text, level
 	join chain_under_comment c2 on c1.parent_id = c2.id)
 select * from chain_under_comment;
 ```
-Для наглядности результат исполнения (`level` - уровень вложенности):
+(`level` - уровень вложенности)
 
 **Получение коллекции любимых треков пользователя**
 ```sql
